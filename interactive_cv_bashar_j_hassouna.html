@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bashar J. Hassouna | Executive Brand Identity & Visual Communication CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Cairo', 'sans-serif'],
+                        display: ['Space Grotesk', 'Cairo', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: 'var(--brand-primary, #1e3a8a)',
+                            accent: 'var(--brand-accent, #2563eb)',
+                            soft: 'var(--brand-soft, #eff6ff)',
+                            border: 'var(--brand-border, #bfdbfe)'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            /* Default Executive Royal Navy Palette */
+            --brand-primary: #0f172a;
+            --brand-accent: #1d4ed8;
+            --brand-soft: #eff6ff;
+            --brand-border: #dbeafe;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #0f172a;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Architectural Drafting Grid on White Canvas */
+        .white-canvas-grid {
+            background-color: #ffffff;
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(15, 23, 42, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(15, 23, 42, 0.035) 1px, transparent 1px);
+        }
+
+        /* Editorial Card System */
+        .editorial-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.03), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .editorial-card:hover {
+            border-color: var(--brand-accent);
+            box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .brand-accent-text {
+            color: var(--brand-accent);
+        }
+
+        .brand-accent-bg {
+            background-color: var(--brand-accent);
+        }
+
+        .brand-soft-bg {
+            background-color: var(--brand-soft);
+        }
+
+        .brand-border-color {
+            border-color: var(--brand-border);
+        }
+
+        /* Custom registration marks for Designer Identity */
+        .reg-mark {
+            position: relative;
+        }
+        .reg-mark::before {
+            content: '+';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1;
+            pointer-events: none;
+        }
+
+        @media print {
+            .no-print { display: none !important; }
+            body, .white-canvas-grid { background: #ffffff !important; }
+            .editorial-card { box-shadow: none !important; border: 1px solid #cbd5e1 !important; break-inside: avoid; }
+            main { padding-top: 0 !important; }
+        }
+    </style>
+</head>
+<body class="white-canvas-grid selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Brand Identity Spec Bar -->
+    <div class="border-b border-slate-200 bg-slate-50/90 backdrop-blur-md text-[11px] font-mono text-slate-500 py-1.5 px-4 no-print">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 font-semibold text-slate-800">
+                    <span class="w-2 h-2 rounded-full brand-accent-bg"></span>
+                    DOC_REF: BJH-CV-2025/2026
+                </span>
+                <span class="hidden sm:inline text-slate-300">|</span>
+                <span class="hidden sm:inline" data-i18n="spec_system">IDENTITY SYSTEM: SWISS EDITORIAL WHITE CANVAS</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-1.5 text-emerald-700 font-semibold">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-ping"></span>
+                    <span data-i18n="status">Open to Remote & International Opportunities</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Formal Executive Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 no-print">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex flex-wrap items-center justify-between gap-4">
+            <!-- Official Brand Mark -->
+            <a href="#top" class="flex items-center gap-3.5 group">
+                <div class="w-11 h-11 rounded-lg bg-slate-900 text-white flex flex-col items-center justify-center font-display font-bold tracking-tighter border-b-4 border-blue-600 transition-transform group-hover:scale-105" style="border-bottom-color: var(--brand-accent);">
+                    <span class="text-base leading-none">BJH</span>
+                    <span class="text-[8px] font-mono tracking-widest text-slate-400 mt-0.5">STUDIO</span>
+                </div>
+                <div>
+                    <span class="font-display font-bold text-sm sm:text-base tracking-tight text-slate-900 block" data-i18n="nav_brand_name">BASHAR J. HASSOUNA</span>
+                    <span class="text-xs text-slate-500 font-medium block" data-i18n="nav_brand_sub">Senior Graphic Designer • MBA in AI</span>
+                </div>
+            </a>
+
+            <!-- Section Navigation -->
+            <nav class="hidden lg:flex items-center gap-7 text-xs font-bold uppercase tracking-wider text-slate-600">
+                <a href="#summary" class="hover:text-slate-950 transition" data-i18n="nav_about">Profile</a>
+                <a href="#competencies" class="hover:text-slate-950 transition" data-i18n="nav_skills">Competencies</a>
+                <a href="#experience" class="hover:text-slate-950 transition" data-i18n="nav_exp">Experience</a>
+                <a href="#technical" class="hover:text-slate-950 transition" data-i18n="nav_tech">Technical & AI</a>
+                <a href="#credentials" class="hover:text-slate-950 transition" data-i18n="nav_edu">Credentials</a>
+            </nav>
+
+            <!-- Formal Palette Switcher, Language & Print -->
+            <div class="flex items-center gap-2.5">
+                <!-- Executive Color System Selector -->
+                <div class="flex items-center gap-1.5 bg-slate-100 px-2.5 py-1.5 rounded-lg border border-slate-200" title="Switch Executive Brand Accent">
+                    <span class="text-[10px] font-mono uppercase text-slate-500 hidden sm:inline mr-1" data-i18n="theme_label">Accent:</span>
+                    <button onclick="setExecutiveTheme('#1d4ed8', '#eff6ff', '#bfdbfe')" class="w-4 h-4 rounded-full bg-[#1d4ed8] ring-2 ring-offset-1 ring-slate-300 hover:scale-110 transition" title="Executive Cobalt"></button>
+                    <button onclick="setExecutiveTheme('#0f766e', '#f0fdfa', '#99f6e4')" class="w-4 h-4 rounded-full bg-[#0f766e] ring-1 ring-offset-1 ring-transparent hover:scale-110 transition" title="Corporate Emerald"></button>
+                    <button onclick="setExecutiveTheme('#b91c1c', '#fef2f2', '#fecaca')" class="w-4 h-4 rounded-full bg-[#b91c1c] ring-1 ring-offset-1 ring-transparent hover:scale-110 transition" title="Swiss Crimson"></button>
+                    <button onclick="setExecutiveTheme('#0f172a', '#f1f5f9', '#cbd5e1')" class="w-4 h-4 rounded-full bg-[#0f172a] ring-1 ring-offset-1 ring-transparent hover:scale-110 transition" title="Pure Monochrome"></button>
+                </div>
+
+                <!-- Bilingual Switcher -->
+                <button onclick="toggleLanguage()" class="px-3.5 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+                    <i data-lucide="languages" class="w-3.5 h-3.5"></i>
+                    <span id="langLabel">عربي</span>
+                </button>
+
+                <!-- Print Official CV -->
+                <button onclick="window.print()" class="px-3 py-2 rounded-lg bg-white hover:bg-slate-50 text-slate-700 border border-slate-300 text-xs font-semibold transition flex items-center gap-1.5 shadow-sm" title="Export / Print Formal PDF">
+                    <i data-lucide="printer" class="w-3.5 h-3.5"></i>
+                    <span class="hidden sm:inline" data-i18n="print_btn">Print PDF</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Document Container (White Canvas Sheet Architecture) -->
+    <main id="top" class="max-w-6xl mx-auto px-4 sm:px-6 py-10 space-y-14">
+
+        <!-- EXECUTIVE HERO & ARCHITECTURAL HEADER -->
+        <section id="summary" class="bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden">
+            <!-- Top Accent Bar -->
+            <div class="h-2 w-full brand-accent-bg"></div>
+
+            <div class="p-6 sm:p-10 lg:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Left Column: Identity & Executive Summary -->
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="flex flex-wrap items-center gap-2.5">
+                            <span class="px-3 py-1 rounded-md brand-soft-bg brand-accent-text border brand-border-color text-xs font-bold tracking-wide uppercase" data-i18n="hero_tag1">
+                                15 Years Experience
+                            </span>
+                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold tracking-wide uppercase" data-i18n="hero_tag2">
+                                MBA in Artificial Intelligence
+                            </span>
+                            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 border border-slate-200 text-xs font-bold tracking-wide uppercase" data-i18n="hero_tag3">
+                                IELTS 6.5
+                            </span>
+                        </div>
+
+                        <div class="space-y-2">
+                            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-950 leading-none" data-i18n="hero_name">
+                                BASHAR J. HASSOUNA
+                            </h1>
+                            <p class="text-lg sm:text-xl font-bold brand-accent-text tracking-wide pt-1" data-i18n="hero_title">
+                                GRAPHIC DESIGNER | BRAND IDENTITY & VISUAL COMMUNICATION
+                            </p>
+                        </div>
+
+                        <!-- Formal Executive Summary -->
+                        <div class="pt-2 border-t border-slate-100">
+                            <h2 class="text-xs font-mono font-bold uppercase tracking-widest text-slate-400 mb-2.5" data-i18n="summary_heading">
+                                01 // PROFESSIONAL SUMMARY
+                            </h2>
+                            <p class="text-slate-700 text-base sm:text-[17px] leading-relaxed font-normal" data-i18n="hero_summary">
+                                Graphic Designer and Visual Communication Specialist with 15 years of experience creating brand identities, marketing collateral, and print and digital design assets. Designed 20+ visual identities and trained 300+ learners. Combines visual concept development, typography, color systems, and production-ready design with a structured approach to consistency and quality control. Holds an MBA in Artificial Intelligence and uses AI-assisted creative tools to support ideation and visual exploration, with human review guiding final design decisions.
+                            </p>
+                        </div>
+
+                        <!-- Direct Contact & Portfolio Bar -->
+                        <div class="pt-4 flex flex-wrap items-center gap-3">
+                            <a href="mailto:basharhassouna@gmail.com" class="px-4 py-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-semibold flex items-center gap-2 transition shadow-sm">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                                <span>basharhassouna@gmail.com</span>
+                            </a>
+                            <button onclick="copyToClipboard('basharhassouna@gmail.com')" class="px-3 py-2.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 border border-slate-200 text-xs font-semibold flex items-center gap-1.5 transition no-print" title="Copy Email Address">
+                                <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                <span data-i18n="btn_copy">Copy</span>
+                            </button>
+                            <a href="https://wa.me/970599372601" target="_blank" class="px-4 py-2.5 rounded-lg bg-white hover:bg-slate-50 text-slate-800 border border-slate-300 text-xs sm:text-sm font-semibold flex items-center gap-2 transition">
+                                <i data-lucide="phone" class="w-4 h-4 brand-accent-text"></i>
+                                <span dir="ltr">+970 599 372 601</span>
+                            </a>
+                            <div class="px-3.5 py-2.5 rounded-lg bg-slate-50 text-slate-600 border border-slate-200 text-xs sm:text-sm font-medium flex items-center gap-1.5">
+                                <i data-lucide="map-pin" class="w-4 h-4 brand-accent-text"></i>
+                                <span data-i18n="location">Gaza, Palestine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Key Metrics & Official Portfolio Directory -->
+                    <div class="lg:col-span-4 bg-slate-50 border border-slate-200/90 rounded-xl p-6 space-y-6">
+                        <div class="flex items-center justify-between border-b border-slate-200 pb-3">
+                            <span class="text-xs font-mono font-bold uppercase tracking-wider text-slate-600" data-i18n="achievements_title">SELECTED ACHIEVEMENTS</span>
+                            <i data-lucide="award" class="w-4 h-4 brand-accent-text"></i>
+                        </div>
+
+                        <!-- High-Contrast Metric Blocks -->
+                        <div class="grid grid-cols-1 gap-3">
+                            <div class="bg-white p-4 rounded-lg border border-slate-200 flex items-center justify-between">
+                                <div>
+                                    <span class="text-3xl font-display font-extrabold text-slate-900">15</span>
+                                    <p class="text-xs font-semibold text-slate-500 mt-0.5" data-i18n="stat_years">Years of Design Experience</p>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg brand-soft-bg brand-accent-text flex items-center justify-center font-bold">
+                                    <i data-lucide="briefcase" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-lg border border-slate-200 flex items-center justify-between">
+                                <div>
+                                    <span class="text-3xl font-display font-extrabold text-slate-900">20+</span>
+                                    <p class="text-xs font-semibold text-slate-500 mt-0.5" data-i18n="stat_brands">Visual Identities Designed</p>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg brand-soft-bg brand-accent-text flex items-center justify-center font-bold">
+                                    <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+
+                            <div class="bg-white p-4 rounded-lg border border-slate-200 flex items-center justify-between">
+                                <div>
+                                    <span class="text-3xl font-display font-extrabold text-slate-900">300+</span>
+                                    <p class="text-xs font-semibold text-slate-500 mt-0.5" data-i18n="stat_learners">Learners Trained</p>
+                                </div>
+                                <div class="w-10 h-10 rounded-lg brand-soft-bg brand-accent-text flex items-center justify-center font-bold">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Official Portfolio Links -->
+                        <div class="pt-2 border-t border-slate-200 space-y-2.5">
+                            <div class="text-[11px] font-mono font-bold uppercase tracking-wider text-slate-500" data-i18n="portfolio_links">
+                                PORTFOLIO & PROFESSIONAL LINKS
+                            </div>
+                            <div class="space-y-2">
+                                <a href="https://behance.net/BasharHassouna" target="_blank" class="w-full px-3.5 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-bold text-slate-800 transition group">
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="layout-template" class="w-4 h-4 brand-accent-text"></i>
+                                        Behance Portfolio
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-400 group-hover:text-slate-700">behance.net/BasharHassouna ↗</span>
+                                </a>
+                                <a href="https://linkedin.com/in/basharhassouna" target="_blank" class="w-full px-3.5 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-bold text-slate-800 transition group">
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="linkedin" class="w-4 h-4 brand-accent-text"></i>
+                                        LinkedIn Profile
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-400 group-hover:text-slate-700">in/basharhassouna ↗</span>
+                                </a>
+                                <a href="#contact-footer" class="w-full px-3.5 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-200 flex items-center justify-between text-xs font-bold text-slate-800 transition group">
+                                    <span class="flex items-center gap-2">
+                                        <i data-lucide="folder-check" class="w-4 h-4 brand-accent-text"></i>
+                                        <span data-i18n="drive_link_label">Google Drive Portfolio</span>
+                                    </span>
+                                    <span class="font-mono text-[11px] text-slate-400 group-hover:text-slate-700" data-i18n="view_access">Direct Access →</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 02 // CORE COMPETENCIES & BRAND PRODUCTION ARCHITECTURE -->
+        <section id="competencies" class="space-y-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b-2 border-slate-900 pb-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="sec_comp_sub">02 // CORE COMPETENCIES & PRODUCTION</span>
+                    <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_comp_title">Brand Identity & Design Production</h2>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="flex flex-wrap gap-1.5 no-print">
+                    <button onclick="filterSkills('all')" class="skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-slate-900 text-white transition" data-filter="all" data-i18n="filter_all">All Competencies (13)</button>
+                    <button onclick="filterSkills('branding')" class="skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-filter="branding" data-i18n="filter_brand">Brand Systems & Identity</button>
+                    <button onclick="filterSkills('production')" class="skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-filter="production" data-i18n="filter_prod">Print & Digital Production</button>
+                    <button onclick="filterSkills('ai')" class="skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition" data-filter="ai" data-i18n="filter_ai">AI Creative Workflows</button>
+                </div>
+            </div>
+
+            <!-- Interactive Competency Matrix -->
+            <div id="skillsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- 03 // PROFESSIONAL EXPERIENCE (15-YEAR RECORD) -->
+        <section id="experience" class="space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b-2 border-slate-900 pb-4">
+                <div>
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="sec_exp_sub">03 // CAREER RECORD (2010 – PRESENT)</span>
+                    <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_exp_title">Professional Experience</h2>
+                </div>
+                <div class="text-xs font-mono text-slate-500" data-i18n="exp_total_badge">
+                    TOTAL TENURE: 15 YEARS CONTINUOUS PRACTICE
+                </div>
+            </div>
+
+            <div id="experienceList" class="space-y-5">
+                <!-- Populated dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- 04 // TECHNICAL SKILLS & AI-ASSISTED CREATIVE WORKFLOWS -->
+        <section id="technical" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left 5 Cols: Adobe Creative Suite Mastery -->
+            <div class="lg:col-span-5 space-y-5">
+                <div class="border-b-2 border-slate-900 pb-3">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="sec_tech_sub">04A // SOFTWARE MASTERY</span>
+                    <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_tech_title">Technical Skills</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Photoshop -->
+                    <div class="editorial-card rounded-xl p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-900 text-white font-display font-bold flex items-center justify-center text-base border-b-2 border-sky-500">
+                                    Ps
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Adobe Photoshop</h3>
+                                    <span class="text-[11px] font-mono uppercase font-semibold brand-accent-text" data-i18n="level_adv">Advanced Proficiency</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 font-mono text-xs font-bold text-slate-700">Expert</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="ps_desc">
+                            Photo retouching, image manipulation, compositing, digital artwork, and advertising visuals.
+                        </p>
+                    </div>
+
+                    <!-- Illustrator -->
+                    <div class="editorial-card rounded-xl p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-900 text-white font-display font-bold flex items-center justify-center text-base border-b-2 border-amber-500">
+                                    Ai
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Adobe Illustrator</h3>
+                                    <span class="text-[11px] font-mono uppercase font-semibold brand-accent-text" data-i18n="level_adv">Advanced Proficiency</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 font-mono text-xs font-bold text-slate-700">Expert</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="ai_desc">
+                            Logo design, vector illustration, brand marks, iconography, and scalable identity assets.
+                        </p>
+                    </div>
+
+                    <!-- InDesign -->
+                    <div class="editorial-card rounded-xl p-5 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-slate-900 text-white font-display font-bold flex items-center justify-center text-base border-b-2 border-rose-500">
+                                    Id
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900 text-base">Adobe InDesign</h3>
+                                    <span class="text-[11px] font-mono uppercase font-semibold brand-accent-text" data-i18n="level_adv">Advanced Proficiency</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-slate-100 font-mono text-xs font-bold text-slate-700">Expert</span>
+                        </div>
+                        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed" data-i18n="id_desc">
+                            Editorial layouts, brochures, catalogs, corporate profiles, multi-page documents, and print-ready artwork.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right 7 Cols: AI-Assisted Creative Workflows -->
+            <div class="lg:col-span-7 space-y-5">
+                <div class="border-b-2 border-slate-900 pb-3 flex flex-wrap items-end justify-between gap-2">
+                    <div>
+                        <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="ai_badge">04B // MBA IN AI APPLIED METHODOLOGY</span>
+                        <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_ai_title">AI-Assisted Creative Workflows</h2>
+                    </div>
+                </div>
+
+                <!-- Methodology Banner -->
+                <div class="p-4 rounded-xl brand-soft-bg border brand-border-color flex items-start gap-3">
+                    <i data-lucide="shield-check" class="w-5 h-5 brand-accent-text shrink-0 mt-0.5"></i>
+                    <p class="text-xs sm:text-sm text-slate-800 font-medium leading-relaxed" data-i18n="ai_note">
+                        Uses AI-assisted creative tools to support ideation and visual exploration, with human review guiding final design decisions and production quality control.
+                    </p>
+                </div>
+
+                <!-- AI Tools Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5" id="aiToolsGrid">
+                    <!-- Populated via JS -->
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 05 // EDUCATION & LANGUAGES -->
+        <section id="credentials" class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-2">
+            <!-- Education -->
+            <div class="lg:col-span-7 space-y-5">
+                <div class="border-b-2 border-slate-900 pb-3">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="sec_edu_sub">05A // ACADEMIC CREDENTIALS</span>
+                    <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_edu_title">Education</h2>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <!-- MBA -->
+                    <div class="editorial-card rounded-xl p-6 space-y-3 relative overflow-hidden">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded bg-slate-900 text-white font-mono text-xs font-bold">2025</span>
+                            <span class="text-[11px] font-mono uppercase font-bold brand-accent-text">Master's Degree</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 pt-1" data-i18n="edu1_deg">MBA in Artificial Intelligence</h3>
+                        <p class="text-sm text-slate-600 font-medium" data-i18n="edu1_uni">Talal Abu-Ghazaleh Global Digital University</p>
+                    </div>
+
+                    <!-- BBA -->
+                    <div class="editorial-card rounded-xl p-6 space-y-3 relative overflow-hidden">
+                        <div class="flex items-center justify-between">
+                            <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs font-bold border border-slate-200">2014</span>
+                            <span class="text-[11px] font-mono uppercase font-bold text-slate-500">Bachelor's Degree</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 pt-1" data-i18n="edu2_deg">Bachelor of Business Administration (BBA)</h3>
+                        <p class="text-sm text-slate-600 font-medium" data-i18n="edu2_uni">Arab College of Applied Sciences</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="lg:col-span-5 space-y-5">
+                <div class="border-b-2 border-slate-900 pb-3">
+                    <span class="text-xs font-mono font-bold uppercase tracking-widest brand-accent-text" data-i18n="sec_lang_sub">05B // BILINGUAL PROFICIENCY</span>
+                    <h2 class="text-2xl font-display font-extrabold text-slate-900 mt-1" data-i18n="sec_lang_title">Languages</h2>
+                </div>
+
+                <div class="editorial-card rounded-xl p-6 space-y-5">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base" data-i18n="lang_ar">Arabic</h3>
+                            <p class="text-xs text-slate-500" data-i18n="lang_ar_desc">Mother Tongue & Editorial Copy</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-slate-900 text-white text-xs font-bold" data-i18n="lang_ar_lvl">Native</span>
+                    </div>
+
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base" data-i18n="lang_en">English</h3>
+                            <p class="text-xs text-slate-500" data-i18n="lang_en_lvl">Advanced Professional Proficiency</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="px-3 py-1 rounded-full brand-soft-bg brand-accent-text border brand-border-color text-xs font-bold block">IELTS 6.5</span>
+                            <span class="text-[10px] font-mono text-slate-400 mt-0.5 block" data-i18n="ielts_label">Overall Band Score</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAL EXECUTIVE FOOTER -->
+        <footer id="contact-footer" class="bg-slate-900 text-white rounded-2xl p-8 sm:p-10 space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-2">
+                    <span class="text-xs font-mono uppercase tracking-widest text-blue-400" data-i18n="footer_tag">DIRECT COMMISSION & RECRUITMENT</span>
+                    <h2 class="text-2xl sm:text-3xl font-display font-bold text-white" data-i18n="footer_cta">
+                        Available for Remote & International Design Roles
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base max-w-xl" data-i18n="footer_sub">
+                        Connect directly to discuss brand identity systems, visual communication campaigns, or senior graphic design opportunities.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-5 flex flex-wrap lg:justify-end gap-3">
+                    <a href="https://behance.net/BasharHassouna" target="_blank" class="px-5 py-3 rounded-xl bg-white text-slate-900 hover:bg-slate-100 font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
+                        <span>Behance Portfolio</span>
+                    </a>
+                    <a href="https://linkedin.com/in/basharhassouna" target="_blank" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="mailto:basharhassouna@gmail.com?subject=Portfolio%20%26%20Design%20Inquiry%20-%20Bashar%20Hassouna" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm flex items-center gap-2 transition">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        <span data-i18n="drive_btn">Request Google Drive Portfolio</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+                <span>BASHAR J. HASSOUNA — GRAPHIC DESIGNER | BRAND IDENTITY & VISUAL COMMUNICATION</span>
+                <span>basharhassouna@gmail.com • +970 599 372 601</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-slate-900 text-white text-xs font-bold shadow-xl transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-2 pointer-events-none">
+        <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+        <span id="toastMsg">Copied to clipboard</span>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        let currentLang = 'en';
+        let activeSkillFilter = 'all';
+
+        const cvData = {
+            skills: [
+                { id: '01', cat: 'branding', icon: 'award', en: 'Brand Identity & Logo Design', desc_en: 'Complete visual marks, monograms, and scalable brand identity architecture.', ar: 'تصميم الهوية البصرية والشعارات', desc_ar: 'ابتكار الشعارات والعلامات التجارية وبناء الهويات البصرية المتكاملة.' },
+                { id: '02', cat: 'branding', icon: 'eye', en: 'Visual Communication', desc_en: 'Translating complex organizational objectives into clear, audience-focused visuals.', ar: 'الاتصال البصري الاستراتيجي', desc_ar: 'ترجمة أهداف المؤسسات والحملات إلى مفاهيم ورسائل بصرية واضحة ومؤثرة.' },
+                { id: '03', cat: 'branding', icon: 'book-open-check', en: 'Brand Guidelines & Identity Systems', desc_en: 'Rulebooks, grid specifications, and usage standards ensuring multi-channel consistency.', ar: 'أدلة وأنظمة الهوية البصرية', desc_ar: 'إعداد أدلة الاستخدام والمعايير الفنية لضمان اتساق الهوية عبر كافة المنصات.' },
+                { id: '04', cat: 'branding', icon: 'type', en: 'Typography & Color Systems', desc_en: 'Bilingual Arabic/English typographic hierarchy and calibrated color palettes.', ar: 'أنظمة الخطوط والألوان', desc_ar: 'بناء التسلسل التايبوجرافي (العربي والإنجليزي) والأنظمة اللونية الاحترافية.' },
+                { id: '05', cat: 'branding', icon: 'layout-grid', en: 'Visual Hierarchy & Composition', desc_en: 'Structured Swiss-grid layouts and balanced compositional architecture.', ar: 'التسلسل البصري والتكوين الفني', desc_ar: 'تنظيم العناصر البصرية وبناء الشبكات التصميمية لتحقيق أعلى مقروئية وجاذبية.' },
+                { id: '06', cat: 'production', icon: 'megaphone', en: 'Marketing & Advertising Design', desc_en: 'High-impact promotional collateral and integrated campaign visuals.', ar: 'تصميم المواد التسويقية والإعلانية', desc_ar: 'تصميم المطبوعات والحملات الترويجية والإعلانية الموجهة للجمهور المستهدف.' },
+                { id: '07', cat: 'production', icon: 'share-2', en: 'Social Media Campaign Assets', desc_en: 'Cohesive digital campaign systems adapted across social formats.', ar: 'تصاميم حملات التواصل الاجتماعي', desc_ar: 'تطوير قوالب وأصول بصرية متكاملة لحملات المنصات الرقمية.' },
+                { id: '08', cat: 'production', icon: 'package', en: 'Packaging Concepts', desc_en: 'Structural surface graphics, labels, and retail presentation concepts.', ar: 'مفاهيم وتصاميم التغليف', desc_ar: 'تطوير التصورات البصرية للملصقات وأغلفة المنتجات.' },
+                { id: '09', cat: 'production', icon: 'file-text', en: 'Corporate Stationery', desc_en: 'Executive letterheads, business cards, folders, and official documentation.', ar: 'المطبوعات والقرطاسية المؤسسية', desc_ar: 'تصميم بطاقات الأعمال، المراسلات الرسمية، والملفات المؤسسية.' },
+                { id: '10', cat: 'production', icon: 'book-marked', en: 'Print & Editorial Layout', desc_en: 'Multi-page brochures, annual reports, catalogs, and print-ready specifications.', ar: 'التصميم الطباعي والتنسيق التحريري', desc_ar: 'إخراج الكتيبات، البروشورات، الكتالوجات، والتقارير متعددة الصفحات.' },
+                { id: '11', cat: 'production', icon: 'layers', en: 'Digital Asset Production', desc_en: 'Web graphics, UI visual assets, and cross-platform presentation decks.', ar: 'إنتاج الأصول البصرية الرقمية', desc_ar: 'تجهيز وإنتاج الرسومات والمواد البصرية للمنتجات والمنصات الرقمية.' },
+                { id: '12', cat: 'production', icon: 'check-check', en: 'Quality Control & Brand Consistency', desc_en: 'Pre-press verification, color accuracy, and strict brand compliance.', ar: 'ضبط الجودة واتساق الهوية البصرية', desc_ar: 'مراجعة الملفات النهائية للطباعة والنشر الرقمي وضمان مطابقتها لمعايير الهوية.' },
+                { id: '13', cat: 'ai', icon: 'cpu', en: 'AI-Assisted Creative Workflows', desc_en: 'Structured ideation, moodboarding, and concept exploration powered by MBA in AI.', ar: 'سير العمل الإبداعي المدعوم بالذكاء الاصطناعي', desc_ar: 'توظيف أدوات الذكاء الاصطناعي في توليد الأفكار والاستكشاف البصري بإشراف بشري كامل.' }
+            ],
+            aiTools: [
+                { name: 'ChatGPT', role_en: 'Ideation & Creative Briefs', role_ar: 'توليد الأفكار وصياغة الملخصات الإبداعية', icon: 'message-square' },
+                { name: 'Adobe Firefly', role_en: 'Commercial Image Generation', role_ar: 'توليد ومعالجة الصور الإبداعية المعتمدة', icon: 'sparkles' },
+                { name: 'Midjourney', role_en: 'Visual Exploration & Moodboards', role_ar: 'الاستكشاف البصري وبناء لوحات الإلهام', icon: 'compass' },
+                { name: 'Google Gemini', role_en: 'Strategic Research & Ideation', role_ar: 'البحث الاستراتيجي وتطوير المفاهيم', icon: 'cpu' },
+                { name: 'Canva Magic Studio', role_en: 'Agile Marketing Content', role_ar: 'إنتاج وتكييف المحتوى التسويقي السريع', icon: 'wand-2' },
+                { name: 'Ideogram', role_en: 'Typography-Led Visual Concepts', role_ar: 'تطوير المفاهيم المعتمدة على التايبوجرافي', icon: 'type' }
+            ],
+            experience: [
+                {
+                    code: 'EXP // 01',
+                    role_en: 'Graphic Designer',
+                    role_ar: 'مصمم جرافيك (Graphic Designer)',
+                    org_en: 'A.V.P. (Alternative Against Violence)',
+                    org_ar: 'مؤسسة بديل ضد العنف (A.V.P.)',
+                    loc_en: 'Gaza, Palestine',
+                    loc_ar: 'غزة، فلسطين',
+                    period_en: '2022 – Present',
+                    period_ar: '2022 – حتى الآن',
+                    current: true,
+                    bullets_en: [
+                        'Create visual communication materials for organizational messaging, awareness campaigns, and program activities.',
+                        'Develop print and digital assets that translate communication objectives into clear, audience-focused visual concepts.',
+                        'Maintain consistency across campaign materials and adapt design outputs to different channels and formats.'
+                    ],
+                    bullets_ar: [
+                        'ابتكار مواد الاتصال البصري لرسائل المؤسسة وحملات التوعية وأنشطة البرامج.',
+                        'تطوير أصول طباعية ورقمية تترجم أهداف الاتصال إلى مفاهيم بصرية واضحة تركز على الجمهور المستهدف.',
+                        'الحفاظ على الاتساق البصري عبر مواد الحملات وتكييف المخرجات التصميمية لمختلف القنوات والصيغ.'
+                    ]
+                },
+                {
+                    code: 'EXP // 02',
+                    role_en: 'Graphic Designer',
+                    role_ar: 'مصمم جرافيك (Graphic Designer)',
+                    org_en: 'IQona Tech Company',
+                    org_ar: 'شركة أيقونة تك (IQona Tech Company)',
+                    loc_en: 'Gaza, Palestine',
+                    loc_ar: 'غزة، فلسطين',
+                    period_en: '2018 – 2022',
+                    period_ar: '2018 – 2022',
+                    current: false,
+                    bullets_en: [
+                        'Designed visual assets for digital products, marketing initiatives, and client-facing projects.',
+                        'Developed logos, branding materials, and supporting graphics aligned with project requirements and intended audiences.',
+                        'Collaborated with project and development teams to translate briefs into practical visual solutions across formats.'
+                    ],
+                    bullets_ar: [
+                        'تصميم الأصول البصرية للمنتجات الرقمية والمبادرات التسويقية والمشاريع الموجهة للعملاء.',
+                        'تطوير الشعارات ومواد الهوية البصرية والرسومات الداعمة بما يتوافق مع متطلبات المشاريع والجمهور المستهدف.',
+                        'التعاون الوثيق مع فرق المشاريع والتطوير لترجمة ملخصات العمل إلى حلول بصرية عملية بمختلف الصيغ.'
+                    ]
+                },
+                {
+                    code: 'EXP // 03',
+                    role_en: 'Freelance Graphic Designer',
+                    role_ar: 'مصمم جرافيك مستقل (Freelance Graphic Designer)',
+                    org_en: 'Online & Offline Clients (including Upwork)',
+                    org_ar: 'عملاء عبر الإنترنت ومحلياً (بما في ذلك منصة Upwork)',
+                    loc_en: 'Remote / International',
+                    loc_ar: 'عن بُعد / دولي ومحلي',
+                    period_en: '2014 – 2018',
+                    period_ar: '2014 – 2018',
+                    current: false,
+                    bullets_en: [
+                        'Delivered graphic design services for clients, including projects sourced through Upwork.',
+                        'Created logos, visual identity materials, promotional graphics, and marketing assets based on client briefs.',
+                        'Managed design tasks from initial concepts and revisions through final asset preparation.'
+                    ],
+                    bullets_ar: [
+                        'تقديم خدمات التصميم الجرافيكي للعملاء، بما في ذلك المشاريع المنفذة عبر منصة Upwork العالمية.',
+                        'تصميم الشعارات ومواد الهوية البصرية والرسومات الترويجية والأصول التسويقية بناءً على طلبات العملاء.',
+                        'إدارة مهام التصميم بالكامل بدءاً من المفاهيم الأولية والتعديلات وحتى تجهيز الملفات النهائية للتسليم.'
+                    ]
+                },
+                {
+                    code: 'EXP // 04',
+                    role_en: 'Graphic Design Trainer',
+                    role_ar: 'مدرب تصميم جرافيكي (Graphic Design Trainer)',
+                    org_en: 'Riyada Training and Development Center & Other Local Organizations',
+                    org_ar: 'مركز ريادة للتدريب والتطوير ومؤسسات محلية أخرى',
+                    loc_en: 'Gaza, Palestine',
+                    loc_ar: 'غزة، فلسطين',
+                    period_en: '2010 – 2014',
+                    period_ar: '2010 – 2014',
+                    current: false,
+                    bullets_en: [
+                        'Delivered practical graphic design training to students, graduates, and aspiring designers.',
+                        'Helped learners build applied design skills and understand core visual communication principles.',
+                        'Supported learners in developing practical foundations for entering design and freelance work.'
+                    ],
+                    bullets_ar: [
+                        'تقديم تدريب عملي في التصميم الجرافيكي للطلاب والخريجين والمصممين الطموحين (أكثر من 300 متدرب).',
+                        'مساعدة المتدربين على بناء مهارات تصميم تطبيقية وفهم مبادئ الاتصال البصري الأساسية.',
+                        'دعم المتدربين في تأسيس قواعد عملية لدخول سوق التصميم والعمل الحر (Freelance).'
+                    ]
+                }
+            ],
+            translations: {
+                en: {
+                    spec_system: 'IDENTITY SYSTEM: SWISS EDITORIAL WHITE CANVAS',
+                    status: 'Open to Remote & International Opportunities',
+                    nav_brand_name: 'BASHAR J. HASSOUNA',
+                    nav_brand_sub: 'Senior Graphic Designer • MBA in AI',
+                    nav_about: 'Profile',
+                    nav_skills: 'Competencies',
+                    nav_exp: 'Experience',
+                    nav_tech: 'Technical & AI',
+                    nav_edu: 'Credentials',
+                    theme_label: 'Accent:',
+                    print_btn: 'Print PDF',
+                    hero_tag1: '15 Years Experience',
+                    hero_tag2: 'MBA in Artificial Intelligence',
+                    hero_tag3: 'IELTS 6.5',
+                    hero_name: 'BASHAR J. HASSOUNA',
+                    hero_title: 'GRAPHIC DESIGNER | BRAND IDENTITY & VISUAL COMMUNICATION',
+                    summary_heading: '01 // PROFESSIONAL SUMMARY',
+                    hero_summary: 'Graphic Designer and Visual Communication Specialist with 15 years of experience creating brand identities, marketing collateral, and print and digital design assets. Designed 20+ visual identities and trained 300+ learners. Combines visual concept development, typography, color systems, and production-ready design with a structured approach to consistency and quality control. Holds an MBA in Artificial Intelligence and uses AI-assisted creative tools to support ideation and visual exploration, with human review guiding final design decisions.',
+                    btn_copy: 'Copy',
+                    location: 'Gaza, Palestine',
+                    achievements_title: 'SELECTED ACHIEVEMENTS',
+                    stat_years: 'Years of Design Experience',
+                    stat_brands: 'Visual Identities Designed',
+                    stat_learners: 'Learners Trained',
+                    portfolio_links: 'PORTFOLIO & PROFESSIONAL LINKS',
+                    drive_link_label: 'Google Drive Portfolio',
+                    view_access: 'Direct Access →',
+                    sec_comp_sub: '02 // CORE COMPETENCIES & PRODUCTION',
+                    sec_comp_title: 'Brand Identity & Design Production',
+                    filter_all: 'All Competencies (13)',
+                    filter_brand: 'Brand Systems & Identity',
+                    filter_prod: 'Print & Digital Production',
+                    filter_ai: 'AI Creative Workflows',
+                    sec_exp_sub: '03 // CAREER RECORD (2010 – PRESENT)',
+                    sec_exp_title: 'Professional Experience',
+                    exp_total_badge: 'TOTAL TENURE: 15 YEARS CONTINUOUS PRACTICE',
+                    sec_tech_sub: '04A // SOFTWARE MASTERY',
+                    sec_tech_title: 'Technical Skills',
+                    level_adv: 'Advanced Proficiency',
+                    ps_desc: 'Photo retouching, image manipulation, compositing, digital artwork, and advertising visuals.',
+                    ai_desc: 'Logo design, vector illustration, brand marks, iconography, and scalable identity assets.',
+                    id_desc: 'Editorial layouts, brochures, catalogs, corporate profiles, multi-page documents, and print-ready artwork.',
+                    ai_badge: '04B // MBA IN AI APPLIED METHODOLOGY',
+                    sec_ai_title: 'AI-Assisted Creative Workflows',
+                    ai_note: 'Uses AI-assisted creative tools to support ideation and visual exploration, with human review guiding final design decisions and production quality control.',
+                    sec_edu_sub: '05A // ACADEMIC CREDENTIALS',
+                    sec_edu_title: 'Education',
+                    edu1_deg: 'MBA in Artificial Intelligence',
+                    edu1_uni: 'Talal Abu-Ghazaleh Global Digital University',
+                    edu2_deg: 'Bachelor of Business Administration (BBA)',
+                    edu2_uni: 'Arab College of Applied Sciences',
+                    sec_lang_sub: '05B // BILINGUAL PROFICIENCY',
+                    sec_lang_title: 'Languages',
+                    lang_ar: 'Arabic',
+                    lang_ar_desc: 'Mother Tongue & Editorial Copy',
+                    lang_ar_lvl: 'Native',
+                    lang_en: 'English',
+                    lang_en_lvl: 'Advanced Professional Proficiency',
+                    ielts_label: 'Overall Band Score',
+                    footer_tag: 'DIRECT COMMISSION & RECRUITMENT',
+                    footer_cta: 'Available for Remote & International Design Roles',
+                    footer_sub: 'Connect directly to discuss brand identity systems, visual communication campaigns, or senior graphic design opportunities.',
+                    drive_btn: 'Request Google Drive Portfolio'
+                },
+                ar: {
+                    spec_system: 'النظام البصري: التصميم السويسري الرسمي (White Canvas)',
+                    status: 'متاح لفرص العمل عن بُعد والفرص الدولية',
+                    nav_brand_name: 'بشار جمال حسونة',
+                    nav_brand_sub: 'مصمم جرافيك أول • ماجستير ذكاء اصطناعي',
+                    nav_about: 'الملف المهني',
+                    nav_skills: 'الكفاءات',
+                    nav_exp: 'الخبرات',
+                    nav_tech: 'البرامج والذكاء الاصطناعي',
+                    nav_edu: 'المؤهلات',
+                    theme_label: 'اللون الرسمي:',
+                    print_btn: 'طباعة PDF',
+                    hero_tag1: 'خبرة 15 عاماً',
+                    hero_tag2: 'ماجستير إدارة أعمال في الذكاء الاصطناعي',
+                    hero_tag3: 'آيلتس 6.5 (IELTS)',
+                    hero_name: 'بشار جمال حسونة',
+                    hero_title: 'مصمم جرافيك | الهوية البصرية والاتصال البصري',
+                    summary_heading: '01 // الملخص المهني التنفيذي',
+                    hero_summary: 'مصمم جرافيك وأخصائي اتصال بصري بخبرة تمتد لـ 15 عاماً في ابتكار الهويات البصرية، والمواد التسويقية، والأصول التصميمية الرقمية والطباعية. صممت أكثر من 20 هوية بصرية متكاملة ودربت أكثر من 300 متدرب. أجمع بين تطوير المفاهيم البصرية، وأنظمة الخطوط والألوان، والتصميم الجاهز للإنتاج وفق منهجية منظمة لضبط الجودة واتساق الهوية. حاصل على ماجستير (MBA) في الذكاء الاصطناعي وأوظف الأدوات الإبداعية المدعومة بالذكاء الاصطناعي لدعم توليد الأفكار والاستكشاف البصري، مع قيادة المراجعة البشرية للقرارات التصميمية النهائية.',
+                    btn_copy: 'نسخ',
+                    location: 'غزة، فلسطين',
+                    achievements_title: 'أبرز الإنجازات المهنية',
+                    stat_years: 'عاماً من الخبرة في التصميم',
+                    stat_brands: 'هوية بصرية متكاملة تم تصميمها',
+                    stat_learners: 'متدرب تم تأهيلهم وتدريبهم',
+                    portfolio_links: 'روابط معرض الأعمال والحسابات المهنية',
+                    drive_link_label: 'معرض الأعمال (Google Drive)',
+                    view_access: 'وصول مباشر ←',
+                    sec_comp_sub: '02 // الكفاءات الجوهرية وإنتاج الهوية',
+                    sec_comp_title: 'الهوية البصرية والإنتاج التصميمي',
+                    filter_all: 'جميع الكفاءات (13)',
+                    filter_brand: 'أنظمة الهوية والشعارات',
+                    filter_prod: 'الإنتاج الطباعي والرقمي',
+                    filter_ai: 'سير عمل الذكاء الاصطناعي',
+                    sec_exp_sub: '03 // السجل المهني (2010 – حتى الآن)',
+                    sec_exp_title: 'الخبرات المهنية',
+                    exp_total_badge: 'إجمالي الخبرة: 15 عاماً من الممارسة المهنية',
+                    sec_tech_sub: '04A // إتقان البرامج الاحترافية',
+                    sec_tech_title: 'المهارات التقنية',
+                    level_adv: 'مستوى متقدم (Advanced)',
+                    ps_desc: 'معالجة وتنقيح الصور، الدمج الاحترافي، التلاعب بالصور، الأعمال الفنية الرقمية، والتصاميم الإعلانية.',
+                    ai_desc: 'تصميم الشعارات، الرسم الشعاعي (Vector)، العلامات التجارية، الأيقونات، وأصول الهوية القابلة للتوسع.',
+                    id_desc: 'التنسيق التحريري، البروشورات، الكتالوجات، الملفات التعريفية للشركات، المستندات متعددة الصفحات، والملفات الجاهزة للطباعة.',
+                    ai_badge: '04B // منهجية ماجستير الذكاء الاصطناعي التطبيقية',
+                    sec_ai_title: 'سير العمل الإبداعي المدعوم بالذكاء الاصطناعي',
+                    ai_note: 'توظيف أدوات الذكاء الاصطناعي لدعم توليد الأفكار والاستكشاف البصري، مع إشراف بشري كامل يقود القرار التصميمي النهائي وضبط الجودة.',
+                    sec_edu_sub: '05A // المؤهلات الأكاديمية',
+                    sec_edu_title: 'التعليم والشهادات',
+                    edu1_deg: 'ماجستير إدارة الأعمال في الذكاء الاصطناعي (MBA in AI)',
+                    edu1_uni: 'جامعة طلال أبوغزالة العالمية الرقمية',
+                    edu2_deg: 'بكالوريوس إدارة الأعمال (BBA)',
+                    edu2_uni: 'الكلية العربية للعلوم التطبيقية',
+                    sec_lang_sub: '05B // الكفاءة اللغوية',
+                    sec_lang_title: 'اللغات',
+                    lang_ar: 'اللغة العربية',
+                    lang_ar_desc: 'اللغة الأم والصياغة التحريرية',
+                    lang_ar_lvl: 'اللغة الأم',
+                    lang_en: 'اللغة الإنجليزية',
+                    lang_en_lvl: 'إتقان مهني متقدم (Advanced)',
+                    ielts_label: 'الدرجة الكلية المعتمدة',
+                    footer_tag: 'التوظيف المباشر والتعاقدات الدولية',
+                    footer_cta: 'متاح للعمل عن بُعد والفرص الدولية في التصميم والهوية البصرية',
+                    footer_sub: 'تواصل مباشرة لمناقشة مشاريع بناء الهويات البصرية، حملات الاتصال البصري، أو فرص العمل كمصمم جرافيك أول.',
+                    drive_btn: 'طلب رابط معرض أعمال Google Drive'
+                }
+            }
+        };
+
+        function renderSkills() {
+            const container = document.getElementById('skillsGrid');
+            const list = activeSkillFilter === 'all'
+                ? cvData.skills
+                : cvData.skills.filter(item => item.cat === activeSkillFilter);
+
+            container.innerHTML = list.map(s => `
+                <div class="editorial-card rounded-xl p-5 flex flex-col justify-between gap-3 group">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="w-10 h-10 rounded-lg brand-soft-bg brand-accent-text border brand-border-color flex items-center justify-center shrink-0">
+                            <i data-lucide="${s.icon}" class="w-5 h-5"></i>
+                        </div>
+                        <span class="font-mono text-xs font-bold text-slate-400 group-hover:text-slate-800 transition">${s.id}</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-base">${currentLang === 'en' ? s.en : s.ar}</h3>
+                        <p class="text-xs text-slate-500 mt-1 leading-relaxed">${currentLang === 'en' ? s.desc_en : s.desc_ar}</p>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function filterSkills(cat) {
+            activeSkillFilter = cat;
+            document.querySelectorAll('.skill-tab').forEach(btn => {
+                if (btn.dataset.filter === cat) {
+                    btn.className = 'skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-slate-900 text-white transition shadow-sm';
+                } else {
+                    btn.className = 'skill-tab px-3.5 py-2 rounded-lg text-xs font-bold bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 transition';
+                }
+            });
+            renderSkills();
+        }
+
+        function renderAITools() {
+            const container = document.getElementById('aiToolsGrid');
+            container.innerHTML = cvData.aiTools.map(tool => `
+                <div class="editorial-card rounded-xl p-4 flex items-start gap-3.5">
+                    <div class="w-9 h-9 rounded-lg bg-slate-900 text-white flex items-center justify-center shrink-0 mt-0.5">
+                        <i data-lucide="${tool.icon}" class="w-4 h-4"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-sm">${tool.name}</h3>
+                        <p class="text-xs text-slate-500 mt-0.5">${currentLang === 'en' ? tool.role_en : tool.role_ar}</p>
+                    </div>
+                </div>
+            `).join('');
+            lucide.createIcons();
+        }
+
+        function renderExperience() {
+            const container = document.getElementById('experienceList');
+            container.innerHTML = cvData.experience.map(job => {
+                const role = currentLang === 'en' ? job.role_en : job.role_ar;
+                const org = currentLang === 'en' ? job.org_en : job.org_ar;
+                const loc = currentLang === 'en' ? job.loc_en : job.loc_ar;
+                const period = currentLang === 'en' ? job.period_en : job.period_ar;
+                const bullets = currentLang === 'en' ? job.bullets_en : job.bullets_ar;
+
+                return `
+                    <div class="editorial-card rounded-2xl p-6 sm:p-8">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                            <!-- Left Meta Column -->
+                            <div class="lg:col-span-4 space-y-2 lg:border-e border-slate-200 lg:pe-6">
+                                <div class="flex items-center gap-2">
+                                    <span class="font-mono text-xs font-bold text-slate-400">${job.code}</span>
+                                    ${job.current ? `<span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold">${currentLang === 'en' ? 'CURRENT' : 'حالياً'}</span>` : ''}
+                                </div>
+                                <h3 class="text-xl font-display font-extrabold text-slate-900">${role}</h3>
+                                <p class="text-sm font-bold brand-accent-text">${org}</p>
+                                <div class="pt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-slate-500">
+                                    <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-800 font-semibold">${period}</span>
+                                    <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> ${loc}</span>
+                                </div>
+                            </div>
+
+                            <!-- Right Responsibilities Column -->
+                            <div class="lg:col-span-8">
+                                <ul class="space-y-3 text-slate-700 text-sm sm:text-[15px] leading-relaxed">
+                                    ${bullets.map(b => `
+                                        <li class="flex items-start gap-3">
+                                            <span class="w-5 h-5 rounded-full brand-soft-bg brand-accent-text flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                                            <span>${b}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            lucide.createIcons();
+        }
+
+        function setExecutiveTheme(accent, soft, border) {
+            document.documentElement.style.setProperty('--brand-accent', accent);
+            document.documentElement.style.setProperty('--brand-soft', soft);
+            document.documentElement.style.setProperty('--brand-border', border);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'ar' : 'en';
+            const htmlEl = document.documentElement;
+            htmlEl.setAttribute('lang', currentLang);
+            htmlEl.setAttribute('dir', currentLang === 'ar' ? 'rtl' : 'ltr');
+
+            document.getElementById('langLabel').textContent = currentLang === 'ar' ? 'English' : 'عربي';
+
+            const dict = cvData.translations[currentLang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) el.textContent = dict[key];
+            });
+
+            renderSkills();
+            renderAITools();
+            renderExperience();
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').textContent = currentLang === 'en' ? 'Email copied: ' + text : 'تم نسخ البريد الإلكتروني: ' + text;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderSkills();
+            renderAITools();
+            renderExperience();
+        });
+    </script>
+</body>
+</html>
